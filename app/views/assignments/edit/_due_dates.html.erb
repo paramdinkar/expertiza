@@ -480,16 +480,14 @@ function addDaysOrMonth(mul, type) {
 <%= check_box_tag('metareviewAllowed', 'true', @metareview_allowed,:onclick=>"removeOrAddMetareview()" ) %>
 <%= label_tag('metareivewAllowed', 'Use metareview deadline') %><br/>
 <div id="date_updater_div">
-                                                    <button type="button" id="show_date_updater">Show/Hide Date Updater</button>
-                                                    <div id="date_updater_inner">
-
-                                                        <%= label_tag('Days') %>
-                                                            <button type="button" id="addDays_btn">+</button>
-								<input id="days" type="number" name="quantity" min="0" value="0" style="width:50px">
-                                                                <button type="button" id="subDays_btn">-</button>
-
-                                                </div>
-												</div>
+<button type="button" id="show_date_updater">Show/Hide Date Updater</button>
+<div id="date_updater_inner">
+<%= label_tag('Days') %>
+<button type="button" id="addDays_btn">+</button>
+<input id="days" type="number" name="quantity" min="0" value="0" style="width:50px">
+<button type="button" id="subDays_btn">-</button>
+</div>
+</div>
 <table class='exp' id='due_dates_table' style='padding:10px;min-width: 990px;overflow: hidden;'>
 
 <tr id='due_date_heading'>
